@@ -13,7 +13,6 @@
 # limitations under the License.
 # ==============================================================================
 """configure script to get build parameters from user."""
-
 import argparse
 import errno
 import json
@@ -139,7 +138,7 @@ def run_shell(cmd, allow_non_zero=False, stderr=None):
 
 
 def cygpath(path):
-  """Convert path from posix to windows."""
+  """Convert path from posix to windows.."""
   return os.path.abspath(path).replace('\\', '/')
 
 
